@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Header } from './header';
+import { CaSidenavMenuItems } from './ca-sidenav-menu-items';
 
-describe('Header', () => {
-  let component: Header;
-  let fixture: ComponentFixture<Header>;
+describe('CaSidenavMenuItems', () => {
+  let component: CaSidenavMenuItems;
+  let fixture: ComponentFixture<CaSidenavMenuItems>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Header]
+      imports: [CaSidenavMenuItems]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Header);
+    fixture = TestBed.createComponent(CaSidenavMenuItems);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
