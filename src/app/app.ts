@@ -9,11 +9,13 @@ import { Footer } from "./common/footer/footer";
 import { CommonModule } from '@angular/common';
 import { CaSidenavMenuItems } from "./common/ca-sidenav-menu-items/ca-sidenav-menu-items";
 import { CaToolbarMenuItems } from "./common/ca-toolbar-menu-items/ca-toolbar-menu-items";
+import { MatButtonModule } from '@angular/material/button';
+import { CaLogoIcon } from "./common/logo/ca-logo-icon/ca-logo-icon";
 
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, MatSidenavModule, MatToolbarModule, MatIconModule, RouterOutlet, Footer, CaSidenavMenuItems, CaToolbarMenuItems ],
+  imports: [CommonModule, MatSidenavModule, MatToolbarModule, MatIconModule, RouterOutlet, Footer, CaSidenavMenuItems, CaToolbarMenuItems, MatButtonModule, CaLogoIcon],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
