@@ -1,0 +1,17 @@
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="500" fill="#87CEFA"/>
+  <!-- Sun -->
+  <circle cx="1200" cy="90" r="50" fill="#FFD966"/>
+  <!-- Clouds -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="250" cy="100" rx="50" ry="25"/>
+    <ellipse cx="290" cy="100" rx="40" ry="20"/>
+    <ellipse cx="220" cy="105" rx="35" ry="18"/>
+  </g>
+  <!-- Hills -->
+  <path d="M0 300 Q360 220 720 280 T1440 260 V500 H0 Z" fill="#91D18C"/>
+  <path d="M0 340 Q360 260 720 320 T1440 300 V500 H0 Z" fill="#78C26D"/>
+  <!-- Birds -->
+  <path d="M400 300 q15 -10 30 0" stroke="#444" stroke-width="2" fill="none"/>
+  <path d="M430 310 q15 -10 30 0" stroke="#444" stroke-width="2" fill="none"/>
+</svg>

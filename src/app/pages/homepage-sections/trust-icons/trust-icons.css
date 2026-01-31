@@ -1,0 +1,28 @@
+.trust-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  /*background: #FFFFFF;*/
+  /* or */ background: linear-gradient(to bottom, #F5FBFD, #FFFFFF);
+}
+
+.trust-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.trust-icon mat-icon {
+  font-size: 1.5rem;
+  color: #5BA8A0;
+}
+
+.trust-icon:hover mat-icon {
+  color: #2D3748;
+  transform: scale(1.1);
+  transition: transform 0.3s, color 0.3s;
+}

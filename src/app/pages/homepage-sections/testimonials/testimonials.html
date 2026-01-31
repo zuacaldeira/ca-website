@@ -1,1 +1,61 @@
-<p>testimonials works!</p>
+<section class="testimonials-section" [@fadeInUp]>
+  <div class="container">
+    <div class="section-header">
+      <div class="header-decoration">
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+        <span class="star">⭐</span>
+      </div>
+      <h2 class="section-title">Was Eltern sagen</h2>
+      <p class="section-subtitle">Erfahrungen von Familien aus unserem Kindergarten</p>
+    </div>
+
+    <div class="testimonials-container" [@staggerCards]="displayedTestimonials.length">
+      <div class="testimonial-card" 
+           *ngFor="let testimonial of displayedTestimonials"
+           [ngClass]="'card-' + testimonial.color">
+        <div class="card-header">
+          <div class="quote-icon">"</div>
+          <div class="stars">
+            <span class="star-icon" *ngFor="let star of getStarArray(testimonial.stars)">⭐</span>
+          </div>
+        </div>
+        
+        <div class="card-body">
+          <p class="testimonial-text">{{ testimonial.text }}</p>
+        </div>
+        
+        <div class="card-footer">
+          <div class="author-info">
+            <div class="author-avatar" [ngClass]="'avatar-' + testimonial.color">
+              <span class="avatar-initial">{{ testimonial.name.charAt(0) }}</span>
+            </div>
+            <div class="author-details">
+              <h4 class="author-name">{{ testimonial.name }}</h4>
+              <p class="author-relation">{{ testimonial.relation }}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-decoration">
+          <div class="decoration-circle"></div>
+          <div class="decoration-circle"></div>
+          <div class="decoration-circle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-controls">
+      <button class="nav-button prev" (click)="prevTestimonials()" aria-label="Vorherige Bewertungen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="nav-button next" (click)="nextTestimonials()" aria-label="Nächste Bewertungen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

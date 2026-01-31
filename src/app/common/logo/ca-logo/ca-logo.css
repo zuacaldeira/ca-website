@@ -1,0 +1,13 @@
+
+
+.ca-logo {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100% ;
+}
+
+.ca-logo app-ca-logo-icon {
+    margin-right: 8px;
+    width: 80px;
+}

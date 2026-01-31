@@ -1,0 +1,20 @@
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <rect width="1440" height="500" fill="#1B2A4A"/>
+  <!-- Moon -->
+  <circle cx="1180" cy="90" r="42" fill="#F5F3CE"/>
+  <circle cx="1200" cy="80" r="38" fill="#1B2A4A"/>
+  <!-- Stars -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="200" cy="80" r="2"/>
+    <circle cx="500" cy="60" r="1.5"/>
+    <circle cx="820" cy="100" r="2"/>
+    <circle cx="1100" cy="70" r="1.8"/>
+  </g>
+  <!-- Hills -->
+  <path d="M0 300 Q360 220 720 280 T1440 260 V500 H0 Z" fill="#3A5F67"/>
+  <path d="M0 340 Q360 260 720 320 T1440 300 V500 H0 Z" fill="#2D4C54"/>
+  <!-- Flowers as glowing dots -->
+  <circle cx="200" cy="320" r="4" fill="#FFD966" opacity="0.7"/>
+  <circle cx="300" cy="330" r="4" fill="#FFB3C1" opacity="0.7"/>
+  <circle cx="500" cy="340" r="5" fill="#B5EAD7" opacity="0.7"/>
+</svg>

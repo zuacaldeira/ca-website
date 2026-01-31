@@ -1,0 +1,37 @@
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .snow { animation: snowFall 12s linear infinite; }
+    @keyframes snowFall { from { transform: translateY(-80px);} to { transform: translateY(580px);} }
+    .light { animation: glow 3s ease-in-out infinite alternate; }
+    @keyframes glow { from {opacity:.5} to {opacity:1} }
+  </style>
+  <rect width="1440" height="500" fill="#0E1B2E"/>
+  <!-- Moon -->
+  <circle cx="1180" cy="90" r="42" fill="#F5F3CE"/>
+  <circle cx="1200" cy="80" r="38" fill="#0E1B2E"/>
+  <!-- Stars -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="200" cy="80" r="2"/>
+    <circle cx="500" cy="60" r="1.5"/>
+  </g>
+  <!-- Hills -->
+  <path d="M0 300 Q360 230 720 290 T1440 270 V500 H0 Z" fill="#1E324F"/>
+  <path d="M0 340 Q360 270 720 330 T1440 310 V500 H0 Z" fill="#2A456B"/>
+  <!-- Pine tree with glowing lights -->
+  <g transform="translate(220,300)">
+    <polygon points="0,60 30,0 60,60" fill="#1F6B5A"/>
+    <rect x="26" y="60" width="8" height="12" fill="#6B4F3F"/>
+    <circle class="light" cx="30" cy="20" r="3" fill="#FFD966"/>
+    <circle class="light" cx="20" cy="35" r="3" fill="#FFB3C1"/>
+  </g>
+  <!-- Snow -->
+  <g class="snow" fill="#FFFFFF">
+    <circle cx="300" cy="40" r="2"/>
+    <circle cx="600" cy="70" r="2"/>
+  </g>
+  <!-- Snowman -->
+  <g transform="translate(1050,310)">
+    <circle cx="20" cy="38" r="18" fill="#FFFFFF"/>
+    <circle cx="20" cy="14" r="12" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<div class="page">
+    @if(isHandset$ | async) {
+    <app-ca-nav-mobile />
+    
+    } @else {
+    <app-ca-nav-desktop />
+    }
+</div>
+ 

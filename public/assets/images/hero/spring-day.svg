@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <rect width="1440" height="500" fill="#EAF6FF"/>
+  <!-- Sun -->
+  <circle cx="1200" cy="90" r="50" fill="#FFD966"/>
+  <!-- Clouds -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="250" cy="100" rx="50" ry="25"/>
+    <ellipse cx="290" cy="100" rx="40" ry="20"/>
+    <ellipse cx="220" cy="105" rx="35" ry="18"/>
+  </g>
+  <!-- Hills -->
+  <path d="M0 300 Q360 220 720 280 T1440 260 V500 H0 Z" fill="#CDECCF"/>
+  <path d="M0 340 Q360 260 720 320 T1440 300 V500 H0 Z" fill="#A8D8B9"/>
+  <!-- Flowers -->
+  <circle cx="200" cy="320" r="6" fill="#FFB3C1"/>
+  <circle cx="300" cy="330" r="5" fill="#FFD966"/>
+  <circle cx="500" cy="340" r="7" fill="#B5EAD7"/>
+  <!-- Butterflies -->
+  <path d="M400 300 q5 -10 10 0" stroke="#FFB3C1" stroke-width="2" fill="none"/>
+  <path d="M420 310 q5 -10 10 0" stroke="#FFD966" stroke-width="2" fill="none"/>
+</svg>

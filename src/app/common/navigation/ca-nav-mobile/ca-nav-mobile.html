@@ -1,0 +1,37 @@
+  <mat-sidenav-container class="sidenav-container handset">
+
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="'dialog'"
+        [mode]="'over'"
+        [opened]="false">
+      <mat-toolbar>Menu</mat-toolbar>
+      <app-ca-sidenav-menu-items/>
+    </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary"> 
+      <div class="desktop-menu">
+        <button
+            type="button"
+            aria-label="Toggle sidenav"
+            matIconButton
+            (click)="toggle(drawer)">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      
+        <div class="logo">
+          <app-ca-logo-icon></app-ca-logo-icon>
+        </div>
+        <span class="spacer"></span>
+        <app-ca-toolbar-menu-items></app-ca-toolbar-menu-items>
+      </div>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+     <main>
+      <router-outlet></router-outlet>
+     </main>
+     <app-footer></app-footer>
+
+  </mat-sidenav-content>
+  </mat-sidenav-container>

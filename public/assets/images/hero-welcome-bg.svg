@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <style>
+    /* Cloud animations */
+    .cloud-slow { animation: cloudMove 90s linear infinite; }
+    .cloud-mid  { animation: cloudMove 70s linear infinite; }
+    .cloud-fast { animation: cloudMove 55s linear infinite; }
+
+    @keyframes cloudMove {
+      from { transform: translateX(-300px); }
+      to   { transform: translateX(1700px); }
+    }
+
+    /* Sun bob */
+    .sun {
+      animation: sunBob 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes sunBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+
+    /* Birds */
+    .birds {
+      animation: birdFly 40s linear infinite;
+    }
+
+    @keyframes birdFly {
+      from { transform: translateX(-200px); }
+      to   { transform: translateX(1600px); }
+    }
+  </style>
+
+  <!-- Sky -->
+  <rect width="1440" height="500" fill="#EAF6FF"/>
+
+  <!-- Sun -->
+  <g class="sun">
+    <circle cx="1200" cy="90" r="55" fill="#FFD966"/>
+    <circle cx="1185" cy="80" r="5" fill="#333"/>
+    <circle cx="1215" cy="80" r="5" fill="#333"/>
+    <path d="M1185 100 Q1200 115 1215 100"
+          stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clouds (different heights & speeds) -->
+  <g class="cloud-slow" fill="#fff" opacity="0.9">
+    <ellipse cx="200" cy="90" rx="55" ry="28"/>
+    <ellipse cx="245" cy="90" rx="40" ry="20"/>
+    <ellipse cx="170" cy="95" rx="35" ry="18"/>
+  </g>
+
+  <g class="cloud-mid" fill="#fff" opacity="0.85">
+    <ellipse cx="500" cy="150" rx="50" ry="25"/>
+    <ellipse cx="540" cy="150" rx="38" ry="18"/>
+    <ellipse cx="470" cy="155" rx="32" ry="16"/>
+  </g>
+
+  <g class="cloud-fast" fill="#fff" opacity="0.8">
+    <ellipse cx="800" cy="210" rx="45" ry="22"/>
+    <ellipse cx="835" cy="210" rx="34" ry="16"/>
+    <ellipse cx="770" cy="215" rx="30" ry="14"/>
+  </g>
+
+  <!-- Birds -->
+  <g class="birds" stroke="#666" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M300 120 q15 -10 30 0"/>
+    <path d="M330 120 q15 -10 30 0"/>
+    <path d="M380 140 q12 -8 24 0"/>
+  </g>
+
+  <!-- Hills -->
+  <path d="M0 300 Q360 220 720 280 T1440 260 V500 H0 Z" fill="#CDECCF"/>
+  <path d="M0 340 Q360 260 720 320 T1440 300 V500 H0 Z" fill="#A8D8B9"/>
+</svg>

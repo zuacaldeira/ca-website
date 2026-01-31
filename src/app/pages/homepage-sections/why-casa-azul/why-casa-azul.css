@@ -1,0 +1,62 @@
+.why-casa-azul-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 20px;
+  background: #F0F9F4; /* Very light green, echoes the hills */
+
+}
+.why-casa-azul-title {
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  color: cadetblue;
+  font-family: var(--font-family);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  text-align: center;
+  width: 20%;
+  border-radius: 5%;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card-icon {
+  font-size: 3rem;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #555;
+}
+.card-description {
+  font-size: 1rem;
+  color: #777;
+}

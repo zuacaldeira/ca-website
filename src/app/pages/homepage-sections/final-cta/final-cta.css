@@ -1,0 +1,12 @@
+.final-cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #E3F5FF 0%, #D8F0E8 100%);
+    text-align: center;
+}
+.final-cta-container p {
+    font-size: 1.5rem;
+    color: #333;
+}

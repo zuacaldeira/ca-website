@@ -1,0 +1,71 @@
+<div class="clock-container">
+  <svg width="400" height="400" viewBox="0 0 400 400">
+    <!-- Clock face background -->
+    <circle class="clock-face" cx="200" cy="200" r="180"/>
+    
+    <!-- Clock border -->
+    <circle class="clock-border" cx="200" cy="200" r="190"/>
+    
+    <!-- Hour markers -->
+    <g class="hour-markers">
+      <line 
+        *ngFor="let marker of hourMarkers"
+        class="hour-marker"
+        [attr.x1]="marker.x1"
+        [attr.y1]="marker.y1"
+        [attr.x2]="marker.x2"
+        [attr.y2]="marker.y2"
+      />
+    </g>
+    
+    <!-- Minute markers -->
+    <g class="minute-markers">
+      <line 
+        *ngFor="let marker of minuteMarkers"
+        class="minute-marker"
+        [attr.x1]="marker.x1"
+        [attr.y1]="marker.y1"
+        [attr.x2]="marker.x2"
+        [attr.y2]="marker.y2"
+      />
+    </g>
+    
+    <!-- Numbers -->
+    <g class="numbers">
+      <text 
+        *ngFor="let num of numbers"
+        class="number"
+        [attr.x]="num.x"
+        [attr.y]="num.y"
+      >
+        {{ num.value }}
+      </text>
+    </g>
+    
+    <!-- Clock hands -->
+    <line 
+      class="hour-hand" 
+      x1="200" 
+      y1="200" 
+      [attr.x2]="hourHandX2" 
+      [attr.y2]="hourHandY2"
+    />
+    <line 
+      class="minute-hand" 
+      x1="200" 
+      y1="200" 
+      [attr.x2]="minuteHandX2" 
+      [attr.y2]="minuteHandY2"
+    />
+    <line 
+      class="second-hand" 
+      x1="200" 
+      y1="200" 
+      [attr.x2]="secondHandX2" 
+      [attr.y2]="secondHandY2"
+    />
+    
+    <!-- Center dot -->
+    <circle class="center-dot" cx="200" cy="200" r="10"/>
+  </svg>
+</div>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .snow { animation: snowFall 12s linear infinite; }
+    @keyframes snowFall { from { transform: translateY(-80px);} to { transform: translateY(580px);} }
+  </style>
+  <rect width="1440" height="500" fill="#EDF5FF"/>
+  <!-- Sun -->
+  <circle cx="1200" cy="90" r="50" fill="#FFD966"/>
+  <!-- Hills -->
+  <path d="M0 300 Q360 230 720 290 T1440 270 V500 H0 Z" fill="#E6F2F7"/>
+  <path d="M0 340 Q360 270 720 330 T1440 310 V500 H0 Z" fill="#D6EAF3"/>
+  <!-- Pine trees -->
+  <g transform="translate(220,300)">
+    <polygon points="0,60 30,0 60,60" fill="#1F6B5A"/>
+    <rect x="26" y="60" width="8" height="12" fill="#6B4F3F"/>
+  </g>
+  <!-- Snow -->
+  <g class="snow" fill="#FFFFFF">
+    <circle cx="300" cy="40" r="2"/>
+    <circle cx="600" cy="70" r="2"/>
+  </g>
+  <!-- Snowman -->
+  <g transform="translate(1050,310)">
+    <circle cx="20" cy="38" r="18" fill="#FFFFFF"/>
+    <circle cx="20" cy="14" r="12" fill="#FFFFFF"/>
+  </g>
+</svg>
