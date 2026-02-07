@@ -1,19 +1,21 @@
-.dektop-menu-items {
+.desktop-menu-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 20px;
+    gap: var(--ca-space-6);
 }
 
 a {
     text-decoration: none;
-    color: gray;
-    font-size: 14pt;
+    color: var(--ca-text-muted);
+    font-family: var(--ca-font-body);
+    font-size: var(--ca-text-lg);
     font-variant: small-caps;
-    margin-right: 16px;
+    margin-right: var(--ca-space-4);
+    transition: color var(--ca-transition-fast), font-weight var(--ca-transition-fast);
 }
 
 a:hover, a.active-link {
     font-weight: bold;
-    color: cadetblue;
+    color: var(--ca-primary);
 }

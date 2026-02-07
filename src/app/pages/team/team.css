@@ -1,0 +1,102 @@
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--ca-space-8);
+}
+
+.page-hero {
+  text-align: center;
+  padding: var(--ca-space-12) 0;
+}
+
+.page-hero h1 {
+  font-size: var(--ca-text-4xl);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-4) 0;
+}
+
+.page-hero p {
+  font-size: var(--ca-text-lg);
+  color: var(--ca-text-muted);
+  margin: 0;
+}
+
+.team-section {
+  padding: var(--ca-space-8) 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--ca-space-6);
+}
+
+.team-card {
+  text-align: center;
+  padding: var(--ca-space-6);
+  background: var(--ca-bg-light);
+  border-radius: var(--ca-radius-lg);
+  border: 1px solid var(--ca-border-light);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--ca-radius-circle);
+  background: var(--ca-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--ca-text-2xl);
+  font-weight: 600;
+  margin: 0 auto var(--ca-space-4);
+}
+
+.member-name {
+  font-size: var(--ca-text-lg);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-2) 0;
+}
+
+.member-role {
+  font-size: var(--ca-text-sm);
+  color: var(--ca-text-muted);
+  margin: 0;
+}
+
+.content-section {
+  padding: var(--ca-space-8) 0;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: var(--ca-text-2xl);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-4) 0;
+}
+
+.section-text {
+  font-size: var(--ca-text-base);
+  color: var(--ca-text-body);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-section {
+  text-align: center;
+  padding: var(--ca-space-12) 0;
+}
+
+.cta-section p {
+  font-size: var(--ca-text-lg);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-4) 0;
+}
+
+@media (max-width: 768px) {
+  .page-container { padding: var(--ca-space-4); }
+  .page-hero h1 { font-size: var(--ca-text-3xl); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: var(--ca-space-4); }
+}

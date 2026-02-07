@@ -1,34 +1,46 @@
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+
   <mat-sidenav-container class="sidenav-container handset">
 
     <mat-sidenav #drawer class="sidenav" fixedInViewport
         [attr.role]="'dialog'"
         [mode]="'over'"
         [opened]="false">
-      <mat-toolbar>Menu</mat-toolbar>
-      <app-ca-sidenav-menu-items/>
+      <mat-toolbar>
+        <span>Menü</span>
+        <span class="spacer"></span>
+        <button mat-icon-button (click)="drawer.close()" aria-label="Menü schließen">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-toolbar>
+      <nav aria-label="Hauptnavigation">
+        <app-ca-sidenav-menu-items/>
+      </nav>
     </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary"> 
-      <div class="desktop-menu">
-        <button
-            type="button"
-            aria-label="Toggle sidenav"
-            matIconButton
-            (click)="toggle(drawer)">
-            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
-      
-        <div class="logo">
-          <app-ca-logo-icon></app-ca-logo-icon>
-        </div>
-        <span class="spacer"></span>
-        <app-ca-toolbar-menu-items></app-ca-toolbar-menu-items>
-      </div>
+    <header>
+      <mat-toolbar color="primary">
+        <div class="desktop-menu">
+          <button
+              type="button"
+              aria-label="Toggle sidenav"
+              matIconButton
+              (click)="toggle(drawer)">
+              <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
 
-    </mat-toolbar>
+          <div class="logo">
+            <app-ca-logo-icon></app-ca-logo-icon>
+          </div>
+          <span class="spacer"></span>
+          <app-ca-toolbar-menu-items></app-ca-toolbar-menu-items>
+        </div>
+
+      </mat-toolbar>
+    </header>
     <!-- Add Content Here -->
-     <main>
+     <main id="main-content">
       <router-outlet></router-outlet>
      </main>
      <app-footer></app-footer>

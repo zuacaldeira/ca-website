@@ -15,7 +15,7 @@ interface Testimonial {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './testimonials.html',
-  styleUrls: ['./testimonials.scss'],
+  styleUrls: ['./testimonials.css'],
   animations: [
     trigger('fadeInUp', [
       transition(':enter', [

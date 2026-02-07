@@ -1,12 +1,96 @@
 .pedagogik-teaser-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  background-color: #e0f7fa;
-  border-radius: 8px;
+  padding: var(--ca-space-16) var(--ca-space-8);
+  background: var(--ca-bg-light);
 }
-.pedagogik-teaser-container p {
-  font-size: 1.5rem;
-  color: #00796b;
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: var(--ca-text-3xl);
+  font-weight: 600;
+  color: var(--ca-text-heading);
+  text-align: center;
+  margin-bottom: var(--ca-space-4);
+}
+
+.section-subtitle {
+  font-size: var(--ca-text-lg);
+  color: var(--ca-text-muted);
+  text-align: center;
+  margin-bottom: var(--ca-space-12);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--ca-space-6);
+  margin-bottom: var(--ca-space-12);
+}
+
+.activity-card {
+  background: var(--ca-bg-white);
+  padding: var(--ca-space-8);
+  border-radius: var(--ca-radius-lg);
+  border: 1px solid var(--ca-border-light);
+  text-align: center;
+}
+
+.activity-icon {
+  font-size: 3rem;
+  margin-bottom: var(--ca-space-4);
+}
+
+.activity-title {
+  font-size: var(--ca-text-xl);
+  font-weight: 600;
+  color: var(--ca-text-heading);
+  margin-bottom: var(--ca-space-3);
+}
+
+.activity-description {
+  font-size: var(--ca-text-base);
+  color: var(--ca-text-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta-container {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pedagogik-teaser-container {
+    padding: var(--ca-space-12) var(--ca-space-6);
+  }
+
+  .section-title {
+    font-size: var(--ca-text-2xl);
+  }
+
+  .section-subtitle {
+    font-size: var(--ca-text-base);
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+    gap: var(--ca-space-4);
+  }
+
+  .activity-card {
+    padding: var(--ca-space-6);
+  }
+
+  .activity-icon {
+    font-size: 2.5rem;
+  }
+
+  .activity-title {
+    font-size: var(--ca-text-lg);
+  }
 }

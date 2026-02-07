@@ -1,0 +1,33 @@
+<div class="alltag-page">
+  <!-- Hero -->
+  <section class="alltag-hero">
+    <h1>Unser Kita-Alltag</h1>
+    <p>Ein strukturierter Tag voller Spiel, Lernen und Geborgenheit</p>
+  </section>
+
+  <!-- Schedule List -->
+  <section class="schedule-section">
+    <div class="schedule-list">
+      <div *ngFor="let activity of activities" class="schedule-item">
+        <span class="item-icon">{{ activity.icon }}</span>
+        <div class="item-content">
+          <span class="item-time">{{ activity.time }}</span>
+          <h3 class="item-title">{{ activity.title }}</h3>
+          <p class="item-description">{{ activity.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <h2>Flexibel & Individuell</h2>
+    <p>Unser Tagesablauf bietet Struktur und Sicherheit, bleibt aber flexibel genug, um auf die Bedürfnisse der Kinder einzugehen.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <p>Möchten Sie unseren Alltag erleben?</p>
+    <a href="/kontakt" class="ca-btn-cta">Besichtigung vereinbaren</a>
+  </section>
+</div>

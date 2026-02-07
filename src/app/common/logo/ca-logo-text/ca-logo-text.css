@@ -14,7 +14,7 @@
 
 
 span {
-    font-family: 'Sour_Gummy', sans-serif;
-    font-size: 2.5rem;
-    color: cadetblue;
+    font-family: var(--ca-font-logo);
+    font-size: var(--ca-text-4xl);
+    color: var(--ca-primary);
 }

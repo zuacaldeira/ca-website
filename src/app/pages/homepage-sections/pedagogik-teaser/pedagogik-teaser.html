@@ -1,5 +1,20 @@
 <div class="pedagogik-teaser-container">
+  <div class="section-content">
+    <h2 class="section-title">Unser pädagogisches Konzept</h2>
+    <p class="section-subtitle">Wir fördern die ganzheitliche Entwicklung jedes Kindes durch vielfältige Aktivitäten</p>
 
-<p>pedagogik-teaser works!</p>
+    <div class="activity-grid">
+      @for (activity of activities; track activity.title) {
+        <div class="activity-card">
+          <div class="activity-icon">{{ activity.icon }}</div>
+          <h3 class="activity-title">{{ activity.title }}</h3>
+          <p class="activity-description">{{ activity.description }}</p>
+        </div>
+      }
+    </div>
 
+    <div class="cta-container">
+      <a routerLink="/konzept" class="ca-btn-cta">Mehr erfahren</a>
+    </div>
+  </div>
 </div>

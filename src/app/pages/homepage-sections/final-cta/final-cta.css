@@ -1,12 +1,22 @@
 .final-cta-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #E3F5FF 0%, #D8F0E8 100%);
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--ca-space-6);
+  padding: var(--ca-space-12) var(--ca-space-8);
+  background: var(--ca-bg-light);
+  text-align: center;
 }
+
 .final-cta-container p {
-    font-size: 1.5rem;
-    color: #333;
+  font-size: var(--ca-text-2xl);
+  font-weight: 600;
+  color: var(--ca-text-heading);
+  margin: 0;
+}
+
+.final-cta-container .ca-btn-cta {
+  font-size: var(--ca-text-lg);
+  padding: var(--ca-space-4) var(--ca-space-8);
 }

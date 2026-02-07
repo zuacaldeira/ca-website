@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+/* Casa Azul Design System – Global Tokens */
+
+:root {
+  /* ── Colors: Primary (Azure) ── */
+  --ca-primary: #039BE5;
+  --ca-primary-light: #4FC3F7;
+  --ca-primary-dark: #0277BD;
+
+  /* ── Colors: Accent (Yellow - for CTAs only) ── */
+  --ca-accent: #f59e0b;
+  --ca-accent-light: #fbbf24;
+  --ca-accent-hover: #d97706;
+
+  /* ── Text Colors ── */
+  --ca-text-heading: #1e293b;
+  --ca-text-body: #334155;
+  --ca-text-muted: #64748b;
+
+  /* ── Backgrounds ── */
+  --ca-bg-white: #ffffff;
+  --ca-bg-light: #f8fafc;
+
+  /* ── Borders ── */
+  --ca-border-light: #e2e8f0;
+
+  /* ── Typography ── */
+  --ca-font-heading: 'Fredoka', cursive;
+  --ca-font-body: 'Baloo 2', cursive;
+  --ca-font-logo: 'Sour_Gummy', sans-serif;
+
+  --ca-text-sm: 0.875rem;
+  --ca-text-base: 1rem;
+  --ca-text-lg: 1.125rem;
+  --ca-text-xl: 1.25rem;
+  --ca-text-2xl: 1.5rem;
+  --ca-text-3xl: 2rem;
+  --ca-text-4xl: 2.5rem;
+
+  /* ── Spacing ── */
+  --ca-space-2: 0.5rem;
+  --ca-space-3: 0.75rem;
+  --ca-space-4: 1rem;
+  --ca-space-6: 1.5rem;
+  --ca-space-8: 2rem;
+  --ca-space-12: 3rem;
+  --ca-space-16: 4rem;
+
+  /* ── Border Radius ── */
+  --ca-radius-sm: 0.375rem;
+  --ca-radius-md: 0.5rem;
+  --ca-radius-lg: 0.75rem;
+  --ca-radius-xl: 1rem;
+  --ca-radius-full: 9999px;
+  --ca-radius-circle: 50%;
+
+  /* ── Shadows ── */
+  --ca-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --ca-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --ca-shadow-nav: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+  /* ── Transitions ── */
+  --ca-transition-fast: 0.15s ease;
+  --ca-transition-base: 0.2s ease;
+}
+
+/* ── Global typography defaults ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ca-font-heading);
+}
+
+body {
+  font-family: var(--ca-font-body);
+}
+
+/* ── CTA Button Style ── */
+.ca-btn-cta {
+  display: inline-block;
+  background: var(--ca-accent);
+  color: white;
+  font-family: var(--ca-font-body);
+  font-weight: 600;
+  font-size: var(--ca-text-base);
+  padding: var(--ca-space-3) var(--ca-space-6);
+  border-radius: var(--ca-radius-full);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--ca-transition-base);
+}
+
+.ca-btn-cta:hover {
+  background: var(--ca-accent-hover);
+}
+
+/* ── Skip to Content Link (Accessibility) ── */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--ca-accent);
+  color: white;
+  padding: var(--ca-space-2) var(--ca-space-4);
+  text-decoration: none;
+  z-index: 100;
+  font-family: var(--ca-font-body);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}

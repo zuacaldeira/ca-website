@@ -2,61 +2,69 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px 20px;
-  background: #F0F9F4; /* Very light green, echoes the hills */
-
+  padding: var(--ca-space-16) var(--ca-space-8);
+  background: var(--ca-bg-white);
 }
+
 .why-casa-azul-title {
-  font-size: 2.5rem;
-  margin-bottom: 100px;
-  color: cadetblue;
-  font-family: var(--font-family);
+  font-size: var(--ca-text-3xl);
+  font-weight: 600;
+  margin-bottom: var(--ca-space-12);
+  color: var(--ca-text-heading);
+  text-align: center;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: var(--ca-space-6);
+  max-width: 900px;
 }
 
 .card {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 0;
+  background: var(--ca-bg-white);
   text-align: center;
-  width: 20%;
-  border-radius: 5%;
-  border: 1px solid #e0e0e0;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+  padding: var(--ca-space-6);
+  border-radius: var(--ca-radius-lg);
+  border: 1px solid var(--ca-border-light);
 }
-
 
 .card-icon {
-  font-size: 3rem;
-  color: #007BFF;
-  margin-bottom: 15px;
-}
-.card img {
-  width: 100%;
-  height: 200px;
-  padding: 0;
-  margin: 0;
-  object-fit: cover;
+  font-size: 2.5rem;
+  margin-bottom: var(--ca-space-4);
+  color: var(--ca-primary);
 }
 
 .card-body {
-  padding: 15px;
+  padding: 0;
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: var(--ca-text-base);
+  font-weight: 600;
+  color: var(--ca-text-heading);
   margin: 0;
-  padding: 0;
-  color: #555;
 }
+
 .card-description {
-  font-size: 1rem;
-  color: #777;
+  font-size: var(--ca-text-sm);
+  color: var(--ca-text-muted);
+  margin: var(--ca-space-2) 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .why-casa-azul-title {
+    font-size: var(--ca-text-2xl);
+  }
+
+  .cards {
+    gap: var(--ca-space-4);
+  }
+
+  .card {
+    width: 150px;
+    padding: var(--ca-space-4);
+  }
 }

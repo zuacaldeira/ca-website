@@ -4,10 +4,29 @@
     display: flex;
     align-items: center;
     height: 100px;
-    width: 100% ;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity var(--ca-transition-base);
+}
+
+.ca-logo:hover {
+    opacity: 0.85;
 }
 
 .ca-logo app-ca-logo-icon {
-    margin-right: 8px;
+    margin-right: var(--ca-space-2);
     width: 80px;
+}
+
+@media (max-width: 768px) {
+  .ca-logo {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ca-logo {
+    height: 60px;
+  }
 }

@@ -1,6 +1,13 @@
 .ctas {
     display: flex;
-    gap: 10px;
+    gap: var(--ca-space-3);
     width: 100%;
+}
 
+a.ca-btn-cta {
+  margin-left: var(--ca-space-2);
+}
+
+a.ca-btn-cta mat-icon {
+  margin-right: var(--ca-space-2);
 }

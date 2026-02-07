@@ -1,1 +1,30 @@
-<p>team works!</p>
+<div class="page-container">
+  <!-- Hero -->
+  <section class="page-hero">
+    <h1>Unser Team</h1>
+    <p>Wir begleiten Kinder mit Herz, Geduld und Fachkompetenz</p>
+  </section>
+
+  <!-- Team Grid -->
+  <section class="team-section">
+    <div class="team-grid">
+      <div *ngFor="let member of teamMembers" class="team-card">
+        <div class="member-avatar">{{ member.initials }}</div>
+        <h3 class="member-name">{{ member.name }}</h3>
+        <p class="member-role">{{ member.role }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="content-section">
+    <h2>Qualifiziert & Engagiert</h2>
+    <p class="section-text">Unser Team besteht aus ausgebildeten Erzieher:innen und pädagogischen Fachkräften. Regelmäßige Fortbildungen sorgen dafür, dass wir immer auf dem neuesten Stand sind.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <p>Möchten Sie unser Team kennenlernen?</p>
+    <a href="/kontakt" class="ca-btn-cta">Besichtigung vereinbaren</a>
+  </section>
+</div>

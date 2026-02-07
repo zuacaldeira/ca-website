@@ -1,15 +1,18 @@
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
 
     <!-- Toolbar -->
-    <mat-toolbar color="primary"> 
-      <div class="desktop-menu">
-          <app-ca-logo></app-ca-logo>
-          <app-ca-desktop-menu-items></app-ca-desktop-menu-items>
-          <app-ca-toolbar-menu-items></app-ca-toolbar-menu-items>
-      </div>
-    </mat-toolbar>
+    <header>
+      <mat-toolbar color="primary">
+        <div class="desktop-menu">
+            <app-ca-logo></app-ca-logo>
+            <app-ca-desktop-menu-items></app-ca-desktop-menu-items>
+            <app-ca-toolbar-menu-items></app-ca-toolbar-menu-items>
+        </div>
+      </mat-toolbar>
+    </header>
 
     <!-- Add Content Here -->
-     <main>
+     <main id="main-content">
       <router-outlet></router-outlet>
      </main>
      <app-footer/>

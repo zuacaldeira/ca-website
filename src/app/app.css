@@ -2,10 +2,3 @@ html, body {
     height: 100%;
     margin: 0;
 }
-
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-

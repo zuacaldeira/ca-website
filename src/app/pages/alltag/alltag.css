@@ -1,0 +1,133 @@
+.alltag-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--ca-space-8);
+}
+
+/* Hero */
+.alltag-hero {
+  text-align: center;
+  padding: var(--ca-space-12) 0;
+}
+
+.alltag-hero h1 {
+  font-size: var(--ca-text-4xl);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-4) 0;
+}
+
+.alltag-hero p {
+  font-size: var(--ca-text-lg);
+  color: var(--ca-text-muted);
+  margin: 0;
+}
+
+/* Schedule List */
+.schedule-section {
+  padding: var(--ca-space-8) 0;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ca-space-4);
+}
+
+.schedule-item {
+  display: flex;
+  gap: var(--ca-space-4);
+  padding: var(--ca-space-4);
+  background: var(--ca-bg-light);
+  border-radius: var(--ca-radius-lg);
+  border: 1px solid var(--ca-border-light);
+}
+
+.item-icon {
+  font-size: var(--ca-text-2xl);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-time {
+  font-size: var(--ca-text-sm);
+  font-weight: 600;
+  color: var(--ca-primary);
+  display: block;
+  margin-bottom: var(--ca-space-2);
+}
+
+.item-title {
+  font-size: var(--ca-text-lg);
+  font-weight: 600;
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-2) 0;
+}
+
+.item-description {
+  font-size: var(--ca-text-base);
+  color: var(--ca-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Info Section */
+.info-section {
+  text-align: center;
+  padding: var(--ca-space-12) var(--ca-space-4);
+  background: var(--ca-bg-white);
+  border-radius: var(--ca-radius-lg);
+  border: 1px solid var(--ca-border-light);
+  margin: var(--ca-space-8) 0;
+}
+
+.info-section h2 {
+  font-size: var(--ca-text-2xl);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-4) 0;
+}
+
+.info-section p {
+  font-size: var(--ca-text-base);
+  color: var(--ca-text-muted);
+  margin: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: var(--ca-space-8) 0;
+}
+
+.cta-section p {
+  font-size: var(--ca-text-lg);
+  color: var(--ca-text-heading);
+  margin: 0 0 var(--ca-space-4) 0;
+}
+
+@media (max-width: 768px) {
+  .alltag-page {
+    padding: var(--ca-space-4);
+  }
+
+  .alltag-hero h1 {
+    font-size: var(--ca-text-3xl);
+  }
+
+  .schedule-item {
+    padding: var(--ca-space-3);
+  }
+
+  .item-title {
+    font-size: var(--ca-text-base);
+  }
+}

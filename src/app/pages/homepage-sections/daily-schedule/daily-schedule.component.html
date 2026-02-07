@@ -1,30 +1,21 @@
 <section class="daily-schedule">
-  <!-- Hero Section -->
-  <div class="hero">
-    <h2 class="hero-title">{{ scheduleData.hero.title }}</h2>
-    <p class="hero-subtitle">{{ scheduleData.hero.subtitle }}</p>
-    <p class="hero-description">{{ scheduleData.hero.description }}</p>
+  <!-- Section Header -->
+  <div class="section-header">
+    <h2 class="section-title">Unser Kita-Alltag</h2>
+    <p class="section-subtitle">Ein strukturierter Tag voller Spiel, Lernen und Geborgenheit</p>
   </div>
 
-  <!-- Activities Grid -->
-  <div class="activities-grid">
-    <div 
-      *ngFor="let activity of scheduleData.activities; let i = index"
-      class="activity-card">
-      
-      <div class="card-header">
-        <div class="icon">{{ activity.icon }}</div>
-        <div class="time">{{ activity.timeRange }}</div>
-      </div>
-      
-      <h3 class="title">{{ activity.title }}</h3>
-      <p class="description">{{ activity.longDescription }}</p>
+  <!-- Activities List (vertical) -->
+  <div class="activities-list">
+    <div *ngFor="let activity of scheduleData.activities" class="activity-item">
+      <span class="activity-icon">{{ activity.icon }}</span>
+      <span class="activity-time">{{ activity.timeRange }}</span>
+      <span class="activity-title">{{ activity.title }}</span>
     </div>
   </div>
 
-  <!-- Footer Section -->
-  <div class="footer-info">
-    <h3 class="footer-title">{{ scheduleData.footer.title }}</h3>
-    <p class="footer-description">{{ scheduleData.footer.description }}</p>
+  <!-- CTA -->
+  <div class="section-footer">
+    <a href="#kontakt" class="ca-btn-cta">Besichtigung vereinbaren</a>
   </div>
 </section>
