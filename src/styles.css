@@ -63,6 +63,16 @@
   --ca-transition-base: 0.2s ease;
 }
 
+/* ── Global reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* ── Global typography defaults ── */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ca-font-heading);

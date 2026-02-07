@@ -3,11 +3,10 @@
 .ca-logo {
     display: flex;
     align-items: center;
-    height: 100px;
-    width: 100%;
     text-decoration: none;
     cursor: pointer;
     transition: opacity var(--ca-transition-base);
+    flex-shrink: 0;
 }
 
 .ca-logo:hover {
@@ -19,14 +18,8 @@
     width: 80px;
 }
 
-@media (max-width: 768px) {
-  .ca-logo {
-    height: 70px;
-  }
-}
-
 @media (max-width: 480px) {
-  .ca-logo {
-    height: 60px;
+  .ca-logo app-ca-logo-icon {
+    width: 60px;
   }
 }
