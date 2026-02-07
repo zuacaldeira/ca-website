@@ -1,19 +1,12 @@
 import { Routes } from '@angular/router';
-import { Homepage } from './pages/homepage/homepage';
-import { UeberUns } from './pages/ueber-uns/ueber-uns';
-import { Team } from './pages/team/team';
-import { Konzept } from './pages/konzept/konzept';
-import { Alltag } from './pages/alltag/alltag';
-import { Anmeldung } from './pages/anmeldung/anmeldung';
-import { Kontakt } from './pages/kontakt/kontakt';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full' },
-    {path: 'home', component: Homepage},
-    {path: 'ueber-uns', component: UeberUns},
-    {path: 'team', component: Team},
-    {path: 'konzept', component: Konzept},
-    {path: 'alltag', component: Alltag},
-    {path: 'anmeldung', component: Anmeldung},
-    {path: 'kontakt', component: Kontakt},
+    {path: 'home', loadComponent: () => import('./pages/homepage/homepage').then(m => m.Homepage)},
+    {path: 'ueber-uns', loadComponent: () => import('./pages/ueber-uns/ueber-uns').then(m => m.UeberUns)},
+    {path: 'team', loadComponent: () => import('./pages/team/team').then(m => m.Team)},
+    {path: 'konzept', loadComponent: () => import('./pages/konzept/konzept').then(m => m.Konzept)},
+    {path: 'alltag', loadComponent: () => import('./pages/alltag/alltag').then(m => m.Alltag)},
+    {path: 'anmeldung', loadComponent: () => import('./pages/anmeldung/anmeldung').then(m => m.Anmeldung)},
+    {path: 'kontakt', loadComponent: () => import('./pages/kontakt/kontakt').then(m => m.Kontakt)},
 ];
