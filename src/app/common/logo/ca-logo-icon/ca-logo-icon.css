@@ -1,13 +1,25 @@
 .ca-logo-icon-container {
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity var(--ca-transition-base);
 }
 
-.ca-logo-icon-container svg {
-    background-color: none;
+.ca-logo-icon-container:hover {
+  opacity: 0.85;
 }
 
-svg{
-  box-shadow: 5x 10px 13px rgba(0,0,0,0.3);
-  border-radius: 50%;
+.ca-logo-icon {
+  border-radius: var(--ca-radius-circle);
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .ca-logo-icon {
+    width: 60px;
+  }
 }
